@@ -5,11 +5,10 @@
   "scripts": {
     "precommit": "lint-staged",
     "bootstrap": "lerna bootstrap",
-    "prebuild": "yarn copy:schematics",
     "build": "bazel build ...",
     "deploy:builds": "ts-node ./build/deploy-build.ts",
     "test:unit": "node ./tests.js",
-    "test": "yarn copy:schematics && nyc yarn run test:unit",
+    "test": "nyc yarn run test:unit",
     "clean": "git clean -xdf && yarn && yarn run bootstrap",
     "cli": "ng",
     "coverage:html": "nyc report --reporter=html",
