@@ -15,9 +15,9 @@ import {
 
 const collectionPath = path.join(__dirname, '../migration.json');
 
-describe('Store Migration 6_0_0', () => {
+describe('Store Devtools Migration 6_0_0', () => {
   let appTree;
-  const pkgName = 'store';
+  const pkgName = 'store-devtools';
 
   versionPrefixes.forEach(prefix => {
     it(`should install version ${prefix}6.0.0`, () => {
